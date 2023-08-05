@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gt-humor-magazine/static/css/main.5c7b1def.css",
-    "main.js": "/gt-humor-magazine/static/js/main.35a05af8.js",
+    "main.css": "/gt-humor-magazine/static/css/main.c15c6a01.css",
+    "main.js": "/gt-humor-magazine/static/js/main.3346203d.js",
     "static/js/787.f1784e6e.chunk.js": "/gt-humor-magazine/static/js/787.f1784e6e.chunk.js",
     "index.html": "/gt-humor-magazine/index.html",
-    "main.5c7b1def.css.map": "/gt-humor-magazine/static/css/main.5c7b1def.css.map",
-    "main.35a05af8.js.map": "/gt-humor-magazine/static/js/main.35a05af8.js.map",
+    "main.c15c6a01.css.map": "/gt-humor-magazine/static/css/main.c15c6a01.css.map",
+    "main.3346203d.js.map": "/gt-humor-magazine/static/js/main.3346203d.js.map",
     "787.f1784e6e.chunk.js.map": "/gt-humor-magazine/static/js/787.f1784e6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c7b1def.css",
-    "static/js/main.35a05af8.js"
+    "static/css/main.c15c6a01.css",
+    "static/js/main.3346203d.js"
   ]
 }
