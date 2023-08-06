@@ -1,19 +1,18 @@
 import { useEffect, useRef, useState } from "react";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { Link, useNavigate } from "react-router-dom";
 import {
-	IoChevronDown,
 	IoCloseOutline,
 	IoMenuOutline,
 	IoPersonCircleOutline,
 } from "react-icons/io5";
 
-import { userData, userToken } from "../../utils/store";
+import { userData } from "../../utils/store";
 import "./index.css";
 
 const Navbar = () => {
 	const [user, setUser] = useRecoilState(userData);
-	const [token, setToken] = useRecoilState(userData);
+	const setToken = useSetRecoilState(userData);
 	const [navOpened, setNavOpened] = useState(false);
 	const authDropdownRef = useRef(null);
 	const [authDropdownOpened, setAuthDropdownOpened] = useState(false);

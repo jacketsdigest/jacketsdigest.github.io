@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useState } from "react";
+import { useSetRecoilState } from "recoil";
 import axios from "axios";
 
 import { userData, userToken } from "../../utils/store";
@@ -10,10 +9,9 @@ const Login = () => {
 	const [password, setPassword] = useState("");
 	const [rememberMe, setRememberMe] = useState(false);
 	const [submitted, setSubmitted] = useState(false);
-	const [user, setUser] = useRecoilState(userData);
-	const [token, setToken] = useRecoilState(userToken);
+	const setUser = useSetRecoilState(userData);
+	const setToken = useSetRecoilState(userToken);
 	const [verified, setVerified] = useState(true);
-	const navigate = useNavigate();
 
 	const logIn = async () => {
 		setSubmitted(true);
@@ -43,7 +41,7 @@ const Login = () => {
 	};
 
 	const resendVerification = async () => {
-		const res = await axios.post("/users/resendVerification", { email });
+		await axios.post("/users/resendVerification", { email });
 	};
 
 	return (

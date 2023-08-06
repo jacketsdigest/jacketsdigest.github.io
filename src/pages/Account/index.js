@@ -3,11 +3,10 @@ import { useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import { userData, userToken } from "../../utils/store";
+import { userData } from "../../utils/store";
 import "./index.css";
 
 const Account = () => {
-	const [token, setToken] = useRecoilState(userToken);
 	const [user, setUser] = useRecoilState(userData);
 	const [firstName, setFirstName] = useState(user.firstName);
 	const [lastName, setLastName] = useState(user.lastName);
@@ -36,7 +35,7 @@ const Account = () => {
 
 			getUserData();
 		}
-	}, []);
+	}, [navigate, setUser, user]);
 
 	return (
 		<>

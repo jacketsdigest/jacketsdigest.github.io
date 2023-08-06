@@ -3,16 +3,10 @@ import axios from "axios";
 
 import "./index.css";
 
-import { useRecoilState } from "recoil";
-
-import { userData, userToken } from "../../utils/store";
-
 const SubmitJoke = () => {
 	const [category, setCategory] = useState(false);
 	const [text, setText] = useState("");
 	const [publishName, setPublishName] = useState(false);
-	const [user, setUser] = useRecoilState(userData);
-	const [token, setToken] = useRecoilState(userToken);
 
 	const categories = ["THWg", "Department", "Miscellaneous"];
 

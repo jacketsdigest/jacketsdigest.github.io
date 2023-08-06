@@ -14,8 +14,11 @@ const Verify = () => {
 			try {
 				const data = { id };
 				const res = await axios.put(`/users/verify`, data);
-				setVerified(true);
-				setMessage("Verification successful!");
+
+				if (res.status === 200) {
+					setVerified(true);
+					setMessage("Verification successful!");
+				}
 			} catch (e) {
 				setVerified(false);
 				setMessage(e.message);
