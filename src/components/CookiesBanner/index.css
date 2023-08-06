@@ -1,0 +1,16 @@
+.cookies-banner {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 25px;
+	box-shadow: 0 0 10px var(--light-grey);
+}
+
+.cookies-text {
+	margin-top: 0;
+}
+
+.cookies-btn {
+	width: 100%;
+}

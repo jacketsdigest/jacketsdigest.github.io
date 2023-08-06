@@ -1,0 +1,16 @@
+.joke-category {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.joke-input {
+	width: 100%;
+	min-height: 5rem;
+	margin-bottom: 15px;
+}
+
+.submit-joke-button {
+	color: var(--light);
+	border: none;
+	width: 100%;
+}

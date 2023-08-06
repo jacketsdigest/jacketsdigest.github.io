@@ -1,0 +1,45 @@
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.auth-tabs {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.auth-tab {
+	width: 100%;
+	border: none;
+	border-bottom: 5px solid var(--light);
+	border-radius: 0;
+
+	&:focus {
+		border: none;
+		border-bottom: 5px solid var(--light);
+	}
+}
+
+.auth-tab-active {
+	border-bottom-color: var(--gold);
+	color: var(--gold);
+
+	&:focus {
+		border-bottom-color: var(--gold);
+		color: var(--gold);
+	}
+}
+
+.auth-input {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.auth-button {
+	color: var(--light);
+	border: none;
+}
